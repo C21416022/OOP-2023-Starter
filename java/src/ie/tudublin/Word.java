@@ -11,35 +11,41 @@ public class Word {
     private String word;
     private ArrayList<Follow> follows;
 
-    public Word(String word) {// constructor method that initializes the word and ArrayList
-        this.word = word;
-        follows = new ArrayList<>();
-    }
+    // Constructor method that initializes the word and ArrayList
+public Word(String word) {
+    this.word = word;
+    follows = new ArrayList<>();
+}
 
-    public String getWord() { // method to return the word stored in the object
-        return word;
-    }
+// Method to return the word stored in the object
+public String getWord() {
+    return word;
+}
 
-    public ArrayList<Follow> getFollows() {// method to return the ArrayList of Follow objects stored in the object
-        return follows;
-    }
+// Method to return the ArrayList of Follow objects stored in the object
+public ArrayList<Follow> getFollows() {
+    return follows;
+}
 
-    public void SetWord(String word) {// method to set the word to a new value
-        this.word = word;
-    }
+// Method to set the word to a new value
+public void setWord(String word) {
+    this.word = word;
+}
 
-    public void addFollow(Follow follow) {// method to add a new Follow object to the ArrayList
-        follows.add(follow);
-    }
+// Method to add a new Follow object to the ArrayList
+public void addFollow(Follow follow) {
+    follows.add(follow);
+}
 
-    public Follow findFollow(String str) {// method to find a Follow object with a given word
-        for (Follow follow : follows) {
-            if (follow.getWord().equals(str)) {
-                return follow;
-            }
+// Method to find a Follow object with a given word
+public Follow findFollow(String str) {
+    for (Follow follow : follows) {
+        if (follow.getWord().equals(str)) {
+            return follow;
         }
-        return null;
     }
+    return null;
+}
 
  
 }
