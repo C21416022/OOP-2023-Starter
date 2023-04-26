@@ -1,34 +1,43 @@
-
+//C21416022 
 package ie.tudublin;
 
+// Define the Follow class
 public class Follow {
+    // Declare class fields
     private String word;
     private int count;
 
-    public Follow(String word, int count) {
-        this.word = word;
-        this.count = count;
-    }
+  // Constructor for the Follow class
+public Follow(String word, int count) {
+    // Assign the parameter values to class fields
+    this.word = word;
+    this.count = count;
+}
 
-    public String getWord() {
-        return word;
-    }
+// Gets the word field
+public String getWord() {
+    return word;
+}
 
-    public int getCount() {
-        return count;
-    }
+// Gets  the count field
+public int getCount() {
+    return count;
+}
 
-    public void Word(String word) {
-        this.word = word;
-    }
+// Set  the word field
+public void setWord(String word) {
+    this.word = word;
+}
 
-    public void CountWord(int count) {
-        this.count = count;
-    }
+// Sets method for the count field
+public void setCount(int count) {
+    this.count = count;
+}
 
-    public void incrementCount() {
-        this.count++;
-    }
+// Method to increment the count field by 1
+public void incrementCount() {
+    this.count++;
+}
 
 
 }
